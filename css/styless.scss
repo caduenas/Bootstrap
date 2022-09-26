@@ -1,0 +1,16 @@
+$primary: #f57f17;
+$secondary: #311a91;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+$custom-colors: (
+  "P-light": #ffb04c,
+  "P-dark": #bc5100, 
+  "S-ligth":#6745c2,
+  "S-dark":#000062
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
