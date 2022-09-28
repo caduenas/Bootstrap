@@ -1,16 +1,19 @@
-$primary: #f57f17;
-$secondary: #311a91;
+$primary: #3F51B5;
+$secondary: #004AAD;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary
 );
 $custom-colors: (
-  "P-light": #ffb04c,
-  "P-dark": #bc5100, 
-  "S-ligth":#6745c2,
-  "S-dark":#000062
+  "P-light": #C5CAE9,
+  "P-dark": #303F9F, 
+  "S-ligth":#5e96f8,
+  "S-dark":#186bfc,
+  "Primary-text":#212121,
+  "Secundary-text":#757575
+
 );
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
